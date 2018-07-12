@@ -1,0 +1,12 @@
+com\niit\BoutiqueBack\DataAccess\CategoryDAOImpl.class
+com\niit\BoutiqueBack\model\Category.class
+com\niit\BoutiqueBack\model\Product.class
+com\niit\BoutiqueBack\App.class
+com\niit\BoutiqueBack\model\UserCredentials.class
+com\niit\BoutiqueBack\DataAccess\CategoryDAO.class
+com\niit\BoutiqueBack\DataAccess\ProductDAO.class
+com\niit\BoutiqueBack\DataAccess\CustomerDAO.class
+com\niit\BoutiqueBack\DataAccess\CustomerDAOImpl.class
+com\niit\BoutiqueBack\DataAccess\ProductDAOIMPL.class
+com\niit\BoutiqueBack\Config.class
+com\niit\BoutiqueBack\model\Customer.class
