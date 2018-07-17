@@ -1,0 +1,41 @@
+Category
+----------------------------
+
+Insert Into CATEGORY VALUES(36,'Lehangas for Bridal Women','Bridal Lehanga');
+Insert Into CATEGORY VALUES(37,'Lehangas for Women With Net Collection',' Net Lehanga');
+Insert Into CATEGORY VALUES(38,'Lehangas With New Bollywood Collection','Bollywood Lehangas');
+Insert Into CATEGORY VALUES(39,' The Lehangas With Crop Top Collection With Full Fashion And Trendy ','Crop Top Lehangas');
+Insert Into CATEGORY VALUES(40,'The New Collections With Floral Type In Lehangas',' Floral Lehangas');
+Insert Into CATEGORY VALUES(41,'The Kurtis For Party Collection With Various Designs',' Party Wear Kurtis');
+Insert Into CATEGORY VALUES(42,'The Kaftans For Long Collection Dress With Trendy Look',' Kaftans');
+Insert Into CATEGORY VALUES(67,'Kurtis And Anrkali For Kids With New Collection',' Kids Anarkali');
+
+
+Customer
+--------------------------
+
+Insert INTO CUSTOMER VALUES(83,'sanmatinairm@gmail.com','sanmati','9944041231');
+
+User Cred
+----------------------
+
+INSERT INTO USERCREDENTIALS VALUES('sanmatinairm@gmail.com','Sujaammu0701@','ROLE_USER');
+INSERT INTO USERCREDENTIALS VALUES('suja123@gmail.com','Suja0701@,'ROLE_ADMIN');
+
+
+PRODUCT
+----------------------------
+
+
+INSERT INTO PRODUCT VALUES(44,37,3035.25,'Navy blue embroidered bangalori silk semi stitched anarkali lehenga suit with dupatta','Circular Lehanga',0);
+INSERT INTO PRODUCT VALUES(48,36,3000.0,'Maroon velvet heavy embroidered lehenga choli with dupatta','Mermaid Lehanga',8);
+INSERT INTO PRODUCT VALUES(49,36,4050.0,'Light apricot georgette plain lehenga with dupatta','Panalled Lehanga',7);
+INSERT INTO PRODUCT VALUES(50,38,5000.0,'Dark lavender net designer heavy work lehenga with dupatta','A-Line Lehanga',10);
+INSERT INTO PRODUCT VALUES(51,39,5500.0,'Beige embroidered net lehenga with choli','Straight Cut Lehanga',10);
+INSERT INTO PRODUCT VALUES(56,37,6750.0,'White net designer heavy work lehenga with dupatta','Half Saree Lehanga',9);
+INSERT INTO PRODUCT VALUES(57,41,1250.0,'Black bhagalpuri silk patch work anarkali suits','Party Wear Kurtis',10);
+INSERT INTO PRODUCT VALUES(62,42,4550.0,'Navy blue embroidered bangalori silk anarkali suit with dupatta','Embroidered Bangalori Silk',9);
+INSERT INTO PRODUCT VALUES(64,40,3500.0,'yellow banglori silk lehenga choli','Kids Yellow Banglori Silk',10);
+INSERT INTO PRODUCT VALUES(65,67,2250.0,'Red green hand embroidery cambric cotton flared kids anarkali with stitched blouse kids lehenga choli','Cotton Flared Kids Anarkali',10);
+
+
