@@ -42,6 +42,8 @@
 				data-toggle="dropdown">Welcome ${sessionScope.username}<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 				<li><a href="${contextRoot}/viewallorders">MyOrders</a></li>
+				<li><a href="${contextRoot}/cart/changepassword">Change Password</a></li>
+				<li><a href="${contextRoot}/cart/viewwish">Wishlist</a></li>
 				</ul>
 				</li>
 				<li><a href="${contextRoot}/cart/viewcart"><span class="glyphicon glyphicon-shopping-cart"></span>(${sessionScope.cartsize})</a></li>

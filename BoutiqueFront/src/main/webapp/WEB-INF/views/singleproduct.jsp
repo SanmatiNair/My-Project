@@ -56,6 +56,11 @@
 					
 					<button type="button" name="refreshcart" id ="refreshcart" onclick='setURL()' value="${product.productId}" class="btn btn-success btn-product"><span
 				class="glyphicon glyphicon-shopping-cart"></span>Add to Cart</button>
+				
+				<a href= "${s}/cart/addwish/${product.productId}"  class="btn button">
+					<span class="glyphicon glyphicon-heart"></span>Add to Wishlist
+				</a>
+				
 			</div>
 		</div>
 	</div>
@@ -77,7 +82,7 @@ $('button[name="refreshcart"]').click(function(){
 		text = "Min 1/Max 5";
 		
 	}else{text="";
-	var url =  "http://localhost:8080/BoutiqueFront/cart/addproduct/"+cartid+"?qnty="+qnty;
+	var url =  "http://localhost:8080/BoutiqueFront/addproduct/"+cartid+"?qnty="+qnty;
 	window.location.href = url;}
 	document.getElementById("demo").innerHTML = text;
 	

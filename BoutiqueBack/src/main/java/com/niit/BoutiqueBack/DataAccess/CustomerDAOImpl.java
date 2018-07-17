@@ -91,4 +91,30 @@ public class CustomerDAOImpl implements CustomerDAO {
 			return null;
 		}
 	}
+	
+	@Override
+	public UserCredentials showcred(String email) {
+		try {
+			UserCredentials customer= (UserCredentials) sf.getCurrentSession().createQuery("from UserCredentials where emailId ='"+email+"'").uniqueResult();
+			
+			return customer;
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	@Override
+	public boolean saveorupdatepassword(UserCredentials uc) {
+		try
+		{
+			sf.getCurrentSession().saveOrUpdate(uc);
+			return true;
+		}
+		catch(Exception e)
+		{
+			return false;
+		}
+	}
+
+
 }

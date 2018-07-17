@@ -147,6 +147,10 @@ color:#D11141;
 <%@ include file="Allorders.jsp" %>
 </c:if>
 
+<c:if test="${userClickChangePassword == true }">
+<%@ include file="changepassword.jsp" %>
+</c:if>
+
 
 <c:if test="${userClickProductInfo == true }">
 <%@ include file="singleproduct.jsp" %>
@@ -155,6 +159,11 @@ color:#D11141;
 <c:if test="${userClickInvoice == true }">
 <%@ include file="invoice.jsp" %>
 </c:if>
+
+<c:if test="${userClickWish == true }">
+<%@ include file="wishlist.jsp" %>
+</c:if>
+
 
 </div>
 <%@ include file="footer.jsp" %>

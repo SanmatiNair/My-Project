@@ -18,16 +18,15 @@
 						<img src="${CR}/${pl.productId}.jpg" class="img-responsive">
 						<div class="caption">
 							<div class="row">
-
 								<div class="col-md-6">
 									<div class="price">
 										<h4>&#8377 ${pl.price} /-</h4>
 									</div>
 								</div>
-							
+				
 								<div class="col-md-6">
 								<c:if test="${pl.quantity == 0 }">
-								<span class="alert alert-danger">Out of Stock</span>
+								<span class="btn btn-primary btn-product ">Out of Stock</span>
 								</c:if>
 								<c:if test="${pl.quantity != 0 }">
 									<a href='${s}/info/${pl.productName}'

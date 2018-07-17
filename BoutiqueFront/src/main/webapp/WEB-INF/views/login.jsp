@@ -37,8 +37,36 @@
           <label class="control-label" >New User?</label>
           <div class="controls">
           <a href="${contextRoot}/registration" class="btn btn-primary">Sign Up</a>
+         
           </div>
+           <a data-toggle="modal" data-target="#myModal">Forgot Password?</a>
           </div>
 </form>
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Password Rest</h4>
+        </div>
+        <div class="modal-body">
+                <form class="form-signin" action='<c:url value='/resetpassword'></c:url>' method="POST">
+                <div class="form-group">
+                <label class="control-label" >Enter Email</label>
+                <input type="text" id="j_username" name="j_username" class="form-control" placeholder="Email" required autofocus>
+                </div>
+                <button class="btn button " type="submit">
+                    Reset</button><br>
+               </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </div>
 </div>
