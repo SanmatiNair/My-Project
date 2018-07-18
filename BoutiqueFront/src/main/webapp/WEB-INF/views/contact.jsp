@@ -18,16 +18,16 @@
         <form action="sendmail">
         
           <div class="form-group">
-            <input type="text" class="form-control" name="uname" id="uname" value="" placeholder="Name">
+            <input type="text" class="form-control" name="uname" id="uname" value="" placeholder="Name" required>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control"  name="usubject" id="usubject" value="" placeholder="subject">
+            <input type="text" class="form-control"  name="usubject" id="usubject" value="" placeholder="subject" required>
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control"name="uphno" id="uphno" value="" placeholder="Phone">
+            <input type="tel" class="form-control"name="uphno" id="uphno" value="" placeholder="Phone" required>
           </div>
           <div class="form-group">
-            <textarea class="form-control" "name="umessage" id="umessage" rows="3" placeholder="Message"></textarea>
+            <textarea class="form-control" "name="umessage" id="umessage" rows="3" placeholder="Message" required></textarea>
           </div>
           <button class="btn btn-default" type="submit" name="button">
               <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit

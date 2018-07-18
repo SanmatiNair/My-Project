@@ -25,14 +25,12 @@
 								</div>
 				
 								<div class="col-md-6">
-								<c:if test="${pl.quantity == 0 }">
-								<span class="btn btn-primary btn-product ">Out of Stock</span>
-								</c:if>
-								<c:if test="${pl.quantity != 0 }">
+								
+								
 									<a href='${s}/info/${pl.productName}'
 										class="btn btn-primary btn-product"><span
 										class="glyphicon glyphicon-info-sign"></span> Info</a>
-										</c:if>
+										
 								</div>
 							</div>
 

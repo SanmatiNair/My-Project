@@ -3,6 +3,7 @@
 <c:set var="CR"
 	value="${pageContext.request.contextPath}/resources/pimages" />
 	<c:url value='/ADMIN/setproduct' var="url"></c:url>
+	<c:set var="s" value="${pageContext.request.contextPath}" />
 
 <div class="container">
 
@@ -90,6 +91,9 @@
 				<input type="submit" id="submit" name="submit"
 					class="btn btn-success">
 			</div>
+			<div class="col-md-4">
+				<a class='btn btn-success' href="${s}/ADMIN/products">Reset</a>
+			</div>
 		</div>
 
 	</form:form>
@@ -113,9 +117,9 @@
 				<li>Quantity ${pl.quantity}</li>
 				</ul>
 				</td>
-				<td class="text-center"><a class='btn btn-info btn-xs' href="editprod/${pl.productName}"><span
+				<td class="text-center"><a class='btn btn-info btn-xs' href="${s}/ADMIN/editprod/${pl.productName}"><span
 						class="glyphicon glyphicon-edit"></span> Edit</a></td>
-				<td class="text-center"><a href="delprod/${pl.productName}"
+				<td class="text-center"><a href="${s}/ADMIN/delprod/${pl.productName}"
 					class="btn btn-danger btn-xs"><span
 						class="glyphicon glyphicon-remove"></span> Delete</a></td>
 			</tr>

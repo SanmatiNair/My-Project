@@ -129,6 +129,8 @@ public class FrontController {
 	public String login(Model M) {
 
 		M.addAttribute("title", "Sign In");
+		M.addAttribute("regsucces",false);
+		M.addAttribute("loginerror", false);
 		M.addAttribute("userClickLogin", true);
 		M.addAttribute("catlist", categorydao.showAllCategory());
 		return "page";
@@ -140,6 +142,7 @@ public class FrontController {
 
 		M.addAttribute("title", "Sign In");
 		M.addAttribute("userClickLogin", true);
+		M.addAttribute("regsucces",false);
 		M.addAttribute("loginerror", true);
 		M.addAttribute("catlist", categorydao.showAllCategory());
 		return "page";
@@ -415,7 +418,7 @@ public class FrontController {
 	}
 
 	@RequestMapping(value = "setcustomer")
-	public String setcustomer(@Valid @ModelAttribute("customer") Customer customer, BindingResult result, Model model) {
+	public String addcustomer(@Valid @ModelAttribute("customer") Customer customer, BindingResult result, Model model) {
 		if (result.hasErrors()) {
 			model.addAttribute("title", "Register");
 			model.addAttribute("userClickRegistration", true);
@@ -428,7 +431,12 @@ public class FrontController {
 
 		try {
 			CustomerDAO.addCustomer(customer);
-			return "redirect:/home";
+			model.addAttribute("title", "Sign In");
+			model.addAttribute("regsucces",true);
+			model.addAttribute("loginerror", false);
+			model.addAttribute("userClickLogin", true);
+			model.addAttribute("catlist", categorydao.showAllCategory());
+			return "page";
 		} catch (Exception e) {
 			model.addAttribute("title", "Register");
 			model.addAttribute("userClickRegistration", true);

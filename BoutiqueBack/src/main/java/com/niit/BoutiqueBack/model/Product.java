@@ -24,7 +24,7 @@ public class Product {
 	@NotEmpty(message="description cannot be blank")
 	private String productDescription;
 	
-	@Min(value=0, message="quantity must be greater than 0")
+	@Min(value=1, message="quantity must be greater than 1")
 	private int quantity;
 	
 	@Min(value=100, message="price must be greater than 100")
